@@ -1,0 +1,11 @@
+GROUP 14:
+MANAMI MONDAL 20CS10033
+PRIYANSHI DIXIT 20CS10047
+ABOTHULA SUNEETHA 20CS10004
+PRANIL DEY 20CS30038
+
+Usage of squashbug command: sb [pid] -suggest  or  sb [pid]
+Heuristic chosen: If number of children of a process > 10, we have considered it as a malware process. 
+If -suggest flag is not given, the function all_proc outputs the process IDs of parents and grandparents.
+If -suggest flag is given, the processIDs are printed and then it checks for all the parent pIDs including the present process pID if it has more than 10 children. If any such process is found, it is returned as a Malware.
+This might not be efficient way but we thought this might be the frequent indication of a malware process.
